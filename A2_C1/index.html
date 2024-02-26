@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caso Practico 5</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="name">Nombre:</label>
+        <input id="name" type="text">
+        <label for="nss">Numero de seguridad social:</label>
+        <input id="nss" type="text">
+        <label for="tdt">Total de dias trabajados:</label>
+        <input id="tdt" type="text">
+    </div>
+
+    <div class="botones">
+        <button onclick="guardar()">guardar</button>
+        <button onclick="eliminar()">eliminar</button>
+    </div>
+
+    <div>
+        <label for="buscar-nss">Buscar por NSS:</label>
+        <input id="buscar-nss" type="text" oninput="buscarPorNSS()">
+    </div>
+
+    <div id="usuarios-container">
+        <!-- Aquí se mostrarán los usuarios -->
+    </div>
+</body>
+</html>
